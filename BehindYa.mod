@@ -20,6 +20,7 @@
 	<OnUpdate>
     </OnUpdate>
 	<SavedVariables>
+		<SavedVariable name="BehindYa.enabled"/>
 	</SavedVariables>
 		<WARInfo>
 			<Categories>
