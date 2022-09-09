@@ -31,7 +31,6 @@ function BehindYa.onInit()
 	BehindYa.drawSpell()
 	RegisterEventHandler(SystemData.Events.UPDATE_PROCESSED, 				"BehindYa.onUpdate")
 	Print(L"<icon2620> BehindYa: active! /behindya for help :)")
-
 end
 
 function BehindYa.SlashHandler(args)
@@ -45,18 +44,6 @@ function BehindYa.SlashHandler(args)
 	else
 		Print(L"<icon2620> To turn off the alert when at 100%+ crit type  '/behindya on' or '/behindya off'")
 	end
-end
-
-function BehindYa.tacticExists()
-	local tactics = GetActiveTactics()
-
-	for k, v in pairs(tactics) do
-		if v == 1875 then
-			--yeah, you got it.
-			return true
-		end
-	end
-	return false
 end
 
 function BehindYa.tacticExists()
