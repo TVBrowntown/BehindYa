@@ -92,7 +92,7 @@ function BehindYa.updateCrit()
 	end
 
 	critRate = GetBonus(GameData.BonusTypes.EBONUS_CRITICAL_HIT_RATE_RANGED, Base) + targetHP + tacticStat + petBuff
-	UI6.updateTexts(critRate)
+	BehindYa.updateTexts(critRate)
 end
 
 function BehindYa.spikedSquig()
@@ -106,7 +106,7 @@ function BehindYa.spikedSquig()
 
 	return false
 end
-function UI6.updateTexts(critRate)
+function BehindYa.updateTexts(critRate)
 	LabelSetText(windowName.."Label", towstring(critRate)..L"%")
 	LabelSetText(windowName.."Shadow", towstring(critRate)..L"%")
 end
